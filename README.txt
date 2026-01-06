@@ -8,7 +8,7 @@ Pasos para crear el .exe de cualquier código:
 - Navega a la ruta del script que quiera tener el .exe
 - Por ejemplo "lanzador.py"
 - Ejecuta PyInstaller en tu terminal:
-    pyinstaller --noconsole --onefile --icon=app_icon.ico lanzador.py
+    pyinstaller --noconsole --onefile --icon=app_icon.ico lanzarProgramas_v2.py
 
     La magia de usar PyInstaller: el archivo .exe resultante es totalmente independiente.
     Aquí te explico qué sucede técnicamente para que te quedes tranquilo:
@@ -20,3 +20,13 @@ Pasos para crear el .exe de cualquier código:
     Van incluidas en el paquete. PyInstaller analiza tu código, detecta que usas pandas y openpyxl, y copia todos los archivos de esas librerías dentro del ejecutable.
     Al abrir el .exe, este crea una carpeta temporal invisible, descomprime las librerías allí y las usa.
     Por eso notarás que el archivo .exe puede pesar entre 30MB y 60MB; ese peso es, básicamente, Pandas y el motor de Python comprimidos.
+
+
+AÑADIDOS: 
+v1.00:
+- ✅ 2025-12-30: Ahora se puede seleccionar si quieres abrir o cerrar. 
+
+
+--------------------------
+Posibles mejoras futuras: 
+- 
